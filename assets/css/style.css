@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@900&display=swap');
+
+@font-face {
+    font-family:'Goldenbook';
+    src:url('https://d1e1jt2fj4r8r.cloudfront.net/fonts/Goldenbook/v1/Goldenbook.eot');
+    src:url('https://d1e1jt2fj4r8r.cloudfront.net/fonts/Goldenbook/v1/Goldenbook.eot?#iefix') format('embedded-opentype'),
+    url('https://d1e1jt2fj4r8r.cloudfront.net/fonts/Goldenbook/v1/Goldenbook.woff2') format('woff2'),
+    url('https://d1e1jt2fj4r8r.cloudfront.net/fonts/Goldenbook/v1/Goldenbook.woff') format('woff'),
+    url('https://d1e1jt2fj4r8r.cloudfront.net/fonts/Goldenbook/v1/Goldenbook.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+:root {
+    --font-goldenbook-serif: 'Goldenbook',  serif;
+    --font-mont-serif: 'Montserrat', sans-serif;
+}
+
+.main-logo{
+    font-family: var(--font-goldenbook-serif);
+}
+
+.nav-menu{
+    font-family: var(--font-mont-serif);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-menu li>a:hover {
+    background-color: #4682B4;
+    border-radius: 7px;
+    opacity: 0.9;
+    color:floralwhite;
+}
+
+/*.nav-item > buttn{
+    background-color: #4682B4;
+    border-radius: 5px;
+    color:floralwhite;
+}*/
+
+.carousel{
+    z-index: -1;
+}
+
+.main-text-carousel{
+    font-family: 'Goldenbook',  serif !important;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.secondary-text-carousel{
+    font-family: var(--font-mont-serif);
+}
+
+.featured-img{
+    width: 235px;
+    height: 52px;
+}
+
+.title-section{
+    font-family: var(--font-mont-serif);
+    font-size: 42px;
+}
+
+.p-card{
+    padding: 5px 100px 20px 100px;
+    margin-bottom: 20px;
+}
+
+.fs-title-card{
+    font-family: var(--font-mont-serif);
+    color: #4682B4;
+    font-size: 24px;
+}
+
+.fs-footer-card{
+    font-family: var(--font-mont-serif);
+    font-size: 13px;
+    color: #4682B4;
+}
+
+/* ----- SECTION GALLERY -----*/
+ 
+.img-container {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+  
+.img-container > img {
+  width: 100%;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.img-container:hover > img {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  background-color: #4682B4;
+  color: white;
+  font-size: 12px;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-family: var(--font-mont-serif);
+  text-decoration: none;
+}
+
+
+/* ----- SECTION TESTIMONIALS -----*/
+
+.fs-title-card-testimonials{
+    font-family: var(--font-mont-serif);
+    color: #211f1f;
+    font-size: 18px;
+}
+
+.fs-work-card-testimonials{
+    font-family: var(--font-goldenbook-serif);
+    color: #4682B4;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fs-content-card-testimonials{
+    font-family: var(--font-mont-serif);
+    color: #211f1f;
+    font-size: 13px;
+
+}
+
+
+
+/* ----- SECTION PLACES -----*/
+
+
+.img-container-places {
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container-places > img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.img-container-places:hover > img {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.container:hover .middle-places {
+    opacity: 1;
+}
+  
+.middle-places {
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-places {
+  background-color: #4682B4;
+  color: white;
+  font-size: 12px;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-family: var(--font-mont-serif);
+  text-decoration: none;
+}
+
+
+/* ----- SECTION FOOTER -----*/
+
+.background-footer{
+    background-color: #266496;
+    font-family: var(--font-mont-serif);
+    color: whitesmoke;
+}
